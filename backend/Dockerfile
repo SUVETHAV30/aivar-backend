@@ -17,7 +17,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY alembic.ini ./
 COPY alembic ./alembic
 COPY app ./app
-COPY loguru ./loguru
 COPY seed_users.py ./
 
 # Create logs directory and non-root user

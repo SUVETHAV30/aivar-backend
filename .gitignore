@@ -8,6 +8,13 @@ __pycache__/
 venv/
 env/
 
+# Node
+node_modules/
+frontend/node_modules/
+dist/
+build/
+
+
 # Environment variables - NEVER commit these
 .env
 *.env
