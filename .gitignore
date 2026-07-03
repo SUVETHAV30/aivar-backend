@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Environment variables - NEVER commit these
+.env
+*.env
+terraform.tfvars
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+logs/
+*.log
+loguru/
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Terraform state - contains sensitive info
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
