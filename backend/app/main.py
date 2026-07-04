@@ -14,6 +14,7 @@ from app.core.config import settings
 from app.database import Base, engine
 from app.middleware.logging_middleware import LoggingMiddleware
 from app.models import *  # noqa: F401,F403
+from app.api.routes.debug import router as debug_router
 
 from fastapi.exceptions import RequestValidationError
 from fastapi import Request
@@ -74,6 +75,7 @@ app.include_router(dashboard_router)
 app.include_router(sessions_router)
 app.include_router(alerts_router)
 
+app.include_router(debug_router)
 Base.metadata.create_all(bind=engine)
 
 
